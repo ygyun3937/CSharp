@@ -140,3 +140,64 @@
                  }
              }
          }
+         
+#
+### ■ 화면 캡처 기능 
+###### - 출처 : https://kdsoft-zeros.tistory.com/185
+###### - 사용법 
+         using System;
+         using System.Collections.Generic;
+         using System.ComponentModel;
+         using System.Data;
+         using System.Drawing;
+         using System.Linq;
+         using System.Text;
+         using System.Windows.Forms;
+
+         namespace _210311_CTestProject
+         {
+             public partial class Form1 : Form
+             {
+
+                 Bitmap btMap;
+
+                 public Form1()
+                 {
+                     InitializeComponent();
+                 }
+
+                 private void button1_Click(object sender, EventArgs e)
+                 {
+                     btMap = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+
+                     using (Graphics g = Graphics.FromImage(btMap))
+                     {
+                         g.CopyFromScreen(Screen.PrimaryScreen.Bounds.X,
+                             Screen.PrimaryScreen.Bounds.Y,
+                             0, 0,
+                             btMap.Size,
+                             CopyPixelOperation.SourceCopy);
+
+                         pictureBox1.Image = btMap;
+                     }
+
+
+                 }
+
+                 private void button2_Click(object sender, EventArgs e)
+                 {
+                     if(btMap != null)
+                     {
+                         SaveFileDialog savefile = new SaveFileDialog();
+
+                         savefile.Filter = "JPG File(*.jpg)|*.jpg";
+
+                         if(savefile.ShowDialog() == DialogResult.OK)
+                         {
+                             btMap.Save(savefile.FileName);
+                         }
+                     }
+                 }
+             }
+         }
+###### ![image](https://user-images.githubusercontent.com/74608323/110754921-b2659980-828b-11eb-80b7-5b9328348350.png)
