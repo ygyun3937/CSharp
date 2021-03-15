@@ -19,7 +19,9 @@
          
 #
 ### ■ readonly 참조
-###### - 출처 : https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/readonly?f1url=%3FappId%3DDev15IDEF1%26l%3DKO-KR%26k%3Dk(readonly_CSharpKeyword);k(TargetFrameworkMoniker-.NETFramework,Version%253Dv4.5.2);k(DevLang-csharp)%26rd%3Dtrue //https://storycompiler.tistory.com/216
+###### - 출처
+######   1. https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/readonly?f1url=%3FappId%3DDev15IDEF1%26l%3DKO-KR%26k%3Dk(readonly_CSharpKeyword);k(TargetFrameworkMoniker-.NETFramework,Version%253Dv4.5.2);k(DevLang-csharp)%26rd%3Dtrue
+######   2. https://storycompiler.tistory.com/216
 ###### § 참조 내용
 ######   - 변수를 상수로 만듬
 ######   - const와 달리 complie 시점에 값을 확정하지 않고 runtime 시점에 이르러 값을 확정할 수 있음
