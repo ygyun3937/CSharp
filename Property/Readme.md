@@ -19,9 +19,13 @@
          
 #
 ### ■ readonly 참조
-###### - 출처 : https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/readonly?f1url=%3FappId%3DDev15IDEF1%26l%3DKO-KR%26k%3Dk(readonly_CSharpKeyword);k(TargetFrameworkMoniker-.NETFramework,Version%253Dv4.5.2);k(DevLang-csharp)%26rd%3Dtrue
+###### - 출처 : https://docs.microsoft.com/ko-kr/dotnet/csharp/language-reference/keywords/readonly?f1url=%3FappId%3DDev15IDEF1%26l%3DKO-KR%26k%3Dk(readonly_CSharpKeyword);k(TargetFrameworkMoniker-.NETFramework,Version%253Dv4.5.2);k(DevLang-csharp)%26rd%3Dtrue //https://storycompiler.tistory.com/216
 ###### § 참조 내용
-######   - 읽기만 가능 속성 , 호출하여 원본을 수정 할 수 없음
+######   - 변수를 상수로 만듬
+######   - const와 달리 complie 시점에 값을 확정하지 않고 runtime 시점에 이르러 값을 확정할 수 있음
+###### ※ 초기화 되는 경우
+######   - 변수 선언
+######   - 생성자 안에서 변수값을 바꾸는 경우
 ###### § 활용
 ######   - 경로, 고정 변수, 초기값
 ###### - 사용법 
