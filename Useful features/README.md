@@ -1,22 +1,4 @@
 ### CSharp 유용기능 
-
-### ■ DoubleBufferd 속성
-###### - 출처 : https://docs.microsoft.com/ko-kr/dotnet/desktop/winforms/advanced/how-to-reduce-graphics-flicker-with-double-buffering-for-forms-and-controls?view=netframeworkdesktop-4.8
-###### § 속성 내용
-######   - 그래픽 깜빡임 현상 줄이기
-######     -> 모든 그리기 작업을 그리기 화면 대신 메모리 버퍼에 먼저 렌더링하여 그리기 작업이 완료되면 메모리 버퍼가 연결된 그리기 화면에 복사
-###### - 사용법 
-         DoubleBufferd = true;
-                  or
-         SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-
-#
-### ■ FormWindowState 속성 
-###### - 출처 : https://docs.microsoft.com/ko-kr/dotnet/api/system.windows.forms.formwindowstate?view=net-5.0
-###### § 속성 내용
-######   - 창크기 속성 (Minimized, Maximized, Normal)
-###### - 사용법 
-         this.WindowState = FormWindowState.Minimized;
          
 #
 ### ■ Screen 클래스 : 다중 모니터 감지 
