@@ -1,7 +1,7 @@
 ### Path Method
 ##### 출처
-##### 1.https://docs.microsoft.com/ko-kr/dotnet/api/system.io.path?view=netframework-4.8
-##### 2.https://sinb57.tistory.com/entry/Path-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0?category=799078
+##### - https://docs.microsoft.com/ko-kr/dotnet/api/system.io.path?view=netframework-4.8
+##### - https://sinb57.tistory.com/entry/Path-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0?category=799078
 #
 ##### 1. 지정된 경로 확장자명 없이 파일이름만 반환
 #####   - 함수명 : GetFileNameWithoutExtension
