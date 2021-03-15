@@ -16,8 +16,8 @@
 
           String fileName1 = Path.GetExtension(path1); // .exe 반환
 #
-##### 3. 지정된 경로 확장자 반환
-#####   - 함수명 : GetExtension
+##### 3. 확장자명 변경
+#####   - 함수명 : ChangeExtension
 #####   - 사용법 
           String path1 = @"C:\Users\USER\Desktop\hello.exe";
           String temp1, temp2, temp3 = "";
@@ -25,3 +25,24 @@
           temp1 = Path.ChangeExtension(path1, ".doc");      // C:\Users\USER\Desktop\hello.doc
           temp2 = Path.ChangeExtension(path1, "doc");       // C:\Users\USER\Desktop\hello.doc
           temp3 = Path.ChangeExtension(path1, "");          // C:\Users\USER\Desktop\hello.         
+#
+##### 4. 경로 내에 확장자 포함 여부 확인
+#####   - 함수명 : HasExtension
+#####   - 사용법 
+            String path1 = @"C:\Users\USER\Desktop\hello.exe";
+            String path2 = @"C:\Users\USER\Desktop\hello";
+            String path3 = @"C:\Users\USER\Desktop\";
+
+            bool bresult = false;
+
+            bresult = Path.HasExtension(path1);
+            Console.WriteLine(bresult);                     //True
+
+            bresult = Path.HasExtension(path2);
+            Console.WriteLine(bresult);                     //False
+
+            bresult = Path.HasExtension(path3);
+            Console.WriteLine(bresult);                     //False
+            
+            
+            
